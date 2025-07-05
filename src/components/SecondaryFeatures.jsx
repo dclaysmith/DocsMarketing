@@ -46,7 +46,7 @@ const features = [
     },
   },
   {
-    name: 'Inventory',
+    name: 'Reminders',
     summary:
       'Never lose track of what’s in stock with accurate inventory tracking.',
     description:
@@ -74,7 +74,7 @@ const features = [
     },
   },
   {
-    name: 'Contacts',
+    name: 'Templates',
     summary:
       'Organize all of your contacts, service providers, and invoices in one place.',
     description:

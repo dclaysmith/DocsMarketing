@@ -38,3 +38,11 @@
 
   --container-2xl: 40rem;
 }
+
+svg text {
+  /* Specify the system or custom font to use */
+  font-family: var(--default-font-family);
+
+  /* Add other styling */
+  font-weight: bold;
+}
