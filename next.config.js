@@ -1,8 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  eslint: {
-    rules: { 'react/no-unescaped-entities': 0 },
-  },
-}
+const nextConfig = {}
 
 module.exports = nextConfig

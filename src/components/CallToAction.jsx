@@ -24,7 +24,7 @@ export function CallToAction() {
             Get started today
           </h2>
           <p className="mt-4 text-lg tracking-tight text-white">
-            It’s time to get organized. How's 3 months free sound?
+            It’s time to get organized. How&apos;s 3 months free sound?
           </p>
           <Button href="#waitlist" color="white" className="mt-10">
             Get 3 months free
