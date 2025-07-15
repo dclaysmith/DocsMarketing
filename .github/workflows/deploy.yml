@@ -78,3 +78,10 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Debug - Check build output
+        run: |
+          echo "Base path: ${{ steps.setup_pages.outputs.base_path }}"
+          echo "Contents of out directory:"
+          find ./out -name "*.html" -exec echo "=== {} ===" \; -exec head -20 {} \;
+          echo "Image files:"
+          find ./out -name "*.jpg" -o -name "*.png" -o -name "*.gif" -o -name "*.svg"
