@@ -17,6 +17,9 @@ importers:
       '@tailwindcss/postcss':
         specifier: ^4.1.7
         version: 4.1.11
+      '@vemetric/react':
+        specifier: ^0.5.4
+        version: 0.5.4(react@18.3.1)
       clsx:
         specifier: ^2.1.0
         version: 2.1.1
@@ -675,6 +678,14 @@ packages:
     resolution: {integrity: sha512-lrW200hZdbfRtztbygyaq/6jP6AKE8qQN2KvPcJ+x7wiD038YtnYtZ82IMNJ69GJibV7bwL3y9FgK+5w/pYt6g==}
     cpu: [x64]
     os: [win32]
+
+  '@vemetric/react@0.5.4':
+    resolution: {integrity: sha512-xwkBF+uLbB64tfiEdWmHD1IKVDORgxfP6sfN3n2N8ZiiO+NG4gfc5CQb29DaXzTBg31CDAByfzf4Simqgf+tqA==}
+    peerDependencies:
+      react: ^18 || ^19
+    peerDependenciesMeta:
+      react:
+        optional: true
 
   acorn-jsx@5.3.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
@@ -2633,6 +2644,10 @@ snapshots:
 
   '@unrs/resolver-binding-win32-x64-msvc@1.11.1':
     optional: true
+
+  '@vemetric/react@0.5.4(react@18.3.1)':
+    optionalDependencies:
+      react: 18.3.1
 
   acorn-jsx@5.3.2(acorn@8.15.0):
     dependencies:
