@@ -26,7 +26,7 @@ export function CallToAction() {
           <p className="mt-4 text-lg tracking-tight text-white">
             It’s time to get organized. How's 3 months free sound?
           </p>
-          <Button href="/register" color="white" className="mt-10">
+          <Button href="#waitlist" color="white" className="mt-10">
             Get 3 months free
           </Button>
         </div>

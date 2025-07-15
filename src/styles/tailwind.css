@@ -37,6 +37,9 @@
   --font-display: var(--font-lexend);
 
   --container-2xl: 40rem;
+
+  --default-font-family: 'Futura', 'sans-serif';
+  --font-display: 'Futura', 'sans-serif';
 }
 
 svg text {

@@ -147,7 +147,7 @@ export function Pricing() {
             name="Starter"
             price="$4"
             description="Good for anyone who is self-employed and just getting started."
-            href="/register"
+            href="#waitlist"
             featuresAccount={['Up to 1gb storage']}
           />
           <Plan
@@ -155,14 +155,14 @@ export function Pricing() {
             name="Small business"
             price="$24"
             description="Perfect for small / medium sized businesses."
-            href="/register"
+            href="#waitlist"
             featuresAccount={['Up to 25gb storage']}
           />
           <Plan
             name="Enterprise"
             price=""
             description="For even the biggest enterprise companies."
-            href="/register"
+            href="#waitlist"
             featuresAccount={['Storage based on your needs']}
           />
         </div>
