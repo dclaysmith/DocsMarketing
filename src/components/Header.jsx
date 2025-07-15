@@ -82,20 +82,32 @@ export function Header() {
       <Container>
         <nav className="relative z-50 flex justify-between">
           <div className="flex items-center md:gap-x-12">
-            <Link href="#" aria-label="Home">
+            <Link href="#" aria-label="Home" data-vmtrc="home-link">
               <Logo className="h-10 w-auto" />
             </Link>
             <div className="hidden md:flex md:gap-x-6">
-              <NavLink href="#features">Features</NavLink>
-              <NavLink href="#testimonials">Testimonials</NavLink>
-              <NavLink href="#pricing">Pricing</NavLink>
+              <NavLink href="#features" data-vmtrc="features-link">
+                Features
+              </NavLink>
+              <NavLink href="#testimonials" data-vmtrc="testimonials-link">
+                Testimonials
+              </NavLink>
+              <NavLink href="#pricing" data-vmtrc="pricing-link">
+                Pricing
+              </NavLink>
             </div>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
             <div className="hidden md:block">
-              <NavLink href="/login">Sign in</NavLink>
+              <NavLink href="/login" data-vmtrc="signin-link">
+                Sign in
+              </NavLink>
             </div>
-            <Button href="#waitlist" color="blue">
+            <Button
+              href="#waitlist"
+              color="blue"
+              data-vmtrc="get-started-button"
+            >
               <span>
                 Get started <span className="hidden lg:inline">today</span>
               </span>
