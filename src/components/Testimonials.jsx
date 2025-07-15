@@ -11,60 +11,33 @@ const testimonials = [
   [
     {
       content:
-        'OyDocs is so easy to use I can’t help but wonder if it’s really doing the things the government expects me to do.',
+        "OyDocs helped me organize my key corporate docs. It's like Google Docs with a brain.",
       author: {
-        name: 'Sheryl Berge',
-        role: 'CEO at Lynch LLC',
+        name: 'Christopher P',
+        role: 'Managing Director / Telecoms',
         image: avatarImage1,
       },
     },
-    {
-      content:
-        'I’m trying to get a hold of someone in support, I’m in a lot of trouble right now and they are saying it has something to do with my books. Please get back to me right away.',
-      author: {
-        name: 'Amy Hahn',
-        role: 'Director at Velocity Industries',
-        image: avatarImage4,
-      },
-    },
   ],
   [
     {
       content:
-        'The best part about OyDocs is every time I pay my employees, my bank balance doesn’t go down like it used to. Looking forward to spending this extra cash when I figure out why my card is being declined.',
+        "With OyDocs, we've found a system that helps us manage our employee, customer, and vendor documentation in one place.",
       author: {
-        name: 'Leland Kiehn',
-        role: 'Founder of Kiehn and Sons',
+        name: 'John M',
+        role: 'CRO / SaaS',
         image: avatarImage5,
       },
     },
-    {
-      content:
-        'There are so many things I had to do with my old software that I just don’t do at all with OyDocs. Suspicious but I can’t say I don’t love it.',
-      author: {
-        name: 'Erin Powlowski',
-        role: 'COO at Armstrong Inc',
-        image: avatarImage2,
-      },
-    },
   ],
   [
     {
       content:
-        'I used to have to remit tax to the EU and with OyDocs I somehow don’t have to do that anymore. Nervous to travel there now though.',
+        'Oydocs helped us scale our hiring and streamline our compliance efforts.',
       author: {
-        name: 'Peter Renolds',
-        role: 'Founder of West Inc',
+        name: 'Oisin R',
+        role: 'Director of Operations / Healthcare',
         image: avatarImage3,
-      },
-    },
-    {
-      content:
-        'This is the fourth email I’ve sent to your support team. I am literally being held in jail for tax fraud. Please answer your damn emails, this is important.',
-      author: {
-        name: 'Amy Hahn',
-        role: 'Director at Velocity Industries',
-        image: avatarImage4,
       },
     },
   ],
@@ -88,12 +61,11 @@ export function Testimonials() {
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Loved by businesses worldwide.
+            Don't take our word for it
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Our software is so simple that people can’t help but fall in love
-            with it. Simplicity is easy when you just skip tons of
-            mission-critical features.
+            OyDocs is trusted by small businesses around the world to manage
+            their documents. Here’s what some of them have to say.
           </p>
         </div>
         <ul

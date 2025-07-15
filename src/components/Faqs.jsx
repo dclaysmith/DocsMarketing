@@ -6,53 +6,38 @@ import backgroundImage from '@/images/background-faqs.jpg'
 const faqs = [
   [
     {
-      question: 'Does OyDocs handle VAT?',
+      question: 'Do you offer a free trial?',
       answer:
-        'Well no, but if you move your company offshore you can probably ignore it.',
+        'Yes, we offer a 3-month free trial so you can really get to know OyDocs before you subscribe.',
     },
     {
-      question: 'Can I pay for my subscription via purchase order?',
-      answer: 'Absolutely, we are happy to take your money in all forms.',
+      question: 'What if I go over my storage limit?',
+      answer:
+        'We will let you know when it happens. You will have one billing cycle to reduce your storage or upgrade to a larger tier.',
     },
     {
-      question: 'How do I apply for a job at OyDocs?',
+      question: 'What is an "active" user?',
       answer:
-        'We only hire our customers, so subscribe for a minimum of 6 months and then let’s talk.',
+        'An active user is someone who has logged in at least once in the last 30 days. This helps us ensure that you are only paying for users who are actively using the service.',
     },
   ],
   [
     {
-      question: 'What was that testimonial about tax fraud all about?',
+      question: 'Is e-signature legally binding?',
       answer:
-        'OyDocs is just a software application, ultimately your books are your responsibility.',
+        'Yes, for many types of documents. e-signatures are generally accepted in most jurisdictions, but it is always best to check local laws or consult a legal expert if you have concerns.',
     },
     {
-      question:
-        'OyDocs sounds horrible but why do I still feel compelled to purchase?',
+      question: 'Can I make my own forms?',
       answer:
-        'This is the power of excellent visual design. You just can’t resist it, no matter how poorly it actually functions.',
-    },
-    {
-      question:
-        'I found other companies called OyDocs, are you sure you can use this name?',
-      answer:
-        'Honestly not sure at all. We haven’t actually incorporated or anything, we just thought it sounded cool and made this website.',
+        'Yes, you can create custom forms using our form builder. You can add fields, set validation rules, and customize the appearance of your forms to suit your needs.',
     },
   ],
   [
     {
-      question: 'How do you generate reports?',
+      question: 'What is the difference betwee administrator and a user?',
       answer:
-        'You just tell us what data you need a report for, and we get our kids to create beautiful charts for you using only the finest crayons.',
-    },
-    {
-      question: 'Can we expect more inventory features?',
-      answer: 'In life it’s really better to never expect anything at all.',
-    },
-    {
-      question: 'I lost my password, how do I get into my account?',
-      answer:
-        'Send us an email and we will send you a copy of our latest password spreadsheet so you can find your information.',
+        'Administrators can upload general documents and manage companies, vendors, and employees. Employees can only upload or sign documents requested of them.',
     },
   ],
 ]

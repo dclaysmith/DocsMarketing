@@ -47,7 +47,14 @@ function CheckIcon({ className, ...props }) {
   )
 }
 
-function Plan({ name, price, description, href, features, featured = false }) {
+function Plan({
+  name,
+  price,
+  description,
+  href,
+  featuresAccount,
+  featured = false,
+}) {
   return (
     <section
       className={clsx(
@@ -64,10 +71,26 @@ function Plan({ name, price, description, href, features, featured = false }) {
       >
         {description}
       </p>
-      <p className="order-first font-display text-5xl font-light tracking-tight text-white">
-        {price}
-        <span className="text-base font-normal">/user</span>
-      </p>
+      {price ? (
+        <div className="flex flex-1">
+          <p className="order-first font-display text-5xl font-light tracking-tight text-white">
+            {price}
+            <span className="text-base font-normal">
+              /month<span className="pl-2">+</span>
+            </span>
+          </p>
+          <p className="pl-2 font-display text-4xl font-light tracking-tight text-white">
+            $4
+            <span className="text-base font-normal">/active user</span>
+          </p>
+        </div>
+      ) : (
+        <div className="flex h-14 items-center justify-center">
+          <p className="vertical-center text-md font-display font-light text-white">
+            Contact us for a custom plan
+          </p>
+        </div>
+      )}
       <ul
         role="list"
         className={clsx(
@@ -75,7 +98,7 @@ function Plan({ name, price, description, href, features, featured = false }) {
           featured ? 'text-white' : 'text-slate-200',
         )}
       >
-        {features.map((feature) => (
+        {featuresAccount.map((feature) => (
           <li key={feature} className="flex">
             <CheckIcon className={featured ? 'text-white' : 'text-slate-400'} />
             <span className="ml-4">{feature}</span>
@@ -89,7 +112,7 @@ function Plan({ name, price, description, href, features, featured = false }) {
         className="mt-8"
         aria-label={`Get started with the ${name} plan for ${price}`}
       >
-        Get started
+        Get 3 Months Free
       </Button>
     </section>
   )
@@ -107,33 +130,49 @@ export function Pricing() {
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
             <span className="relative whitespace-nowrap">
               <SwirlyDoodle className="absolute top-1/2 left-0 h-[1em] w-full fill-blue-400" />
-              <span className="relative">Simple pricing,</span>
-            </span>{' '}
-            for everyone.
+              <span className="relative">Fair Pricing</span>
+            </span>
           </h2>
           <p className="mt-4 text-lg text-slate-400">
-            It doesn’t matter what size your business is, our software won’t
-            work well for you.
+            Pay a small fee to cover your storage but then only pay for{' '}
+            <strong>
+              active<sup>*</sup>
+            </strong>{' '}
+            users.
           </p>
         </div>
-        <div className="mt-16 flex justify-center">
+
+        <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-3 xl:mx-0 xl:gap-x-8">
+          <Plan
+            name="Starter"
+            price="$4"
+            description="Good for anyone who is self-employed and just getting started."
+            href="/register"
+            featuresAccount={['Up to 1gb storage']}
+          />
           <Plan
             featured
-            name=""
-            price="$4"
-            description="Includes Everything."
+            name="Small business"
+            price="$24"
+            description="Perfect for small / medium sized businesses."
             href="/register"
-            features={[
-              'Send 25 quotes and invoices',
-              'Connect up to 5 bank accounts',
-              'Track up to 50 expenses per month',
-              'Automated payroll support',
-              'Export up to 12 reports',
-              'Bulk reconcile transactions',
-              'Track in multiple currencies',
-            ]}
+            featuresAccount={['Up to 25gb storage']}
+          />
+          <Plan
+            name="Enterprise"
+            price=""
+            description="For even the biggest enterprise companies."
+            href="/register"
+            featuresAccount={['Storage based on your needs']}
           />
         </div>
+        <p className="mt-24 text-center text-sm text-slate-400">
+          <strong>
+            <sup>*</sup>Active
+          </strong>{' '}
+          users are those who have <strong>uploaded</strong> or{' '}
+          <strong>signed</strong> a document in the last 30 days. <br />
+        </p>
       </Container>
     </section>
   )

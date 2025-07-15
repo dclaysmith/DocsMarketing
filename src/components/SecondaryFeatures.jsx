@@ -12,61 +12,42 @@ import screenshotProfitLoss from '@/images/screenshots/profit-loss.png'
 
 const features = [
   {
-    name: 'Reporting',
-    summary: 'Stay on top of things with always up-to-date reporting features.',
-    description:
-      'We talked about reporting in the section above but we needed three items here, so mentioning it one more time for posterity.',
-    image: screenshotProfitLoss,
-    icon: function ReportingIcon() {
-      let id = useId()
-      return (
-        <>
-          <defs>
-            <linearGradient
-              id={id}
-              x1="11.5"
-              y1={18}
-              x2={36}
-              y2="15.5"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop offset=".194" stopColor="#fff" />
-              <stop offset={1} stopColor="#6692F1" />
-            </linearGradient>
-          </defs>
-          <path
-            d="m30 15-4 5-4-11-4 18-4-11-4 7-4-5"
-            stroke={`url(#${id})`}
-            strokeWidth={2}
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </>
-      )
-    },
-  },
-  {
-    name: 'Reminders',
+    name: 'Email-to-Document Integration',
     summary:
-      'Never lose track of what’s in stock with accurate inventory tracking.',
+      'Turn any email into a filed document with smart routing and categorization',
     description:
-      'We don’t offer this as part of our software but that statement is inarguably true. Accurate inventory tracking would help you for sure.',
-    image: screenshotInventory,
-    icon: function InventoryIcon() {
+      'Forward contracts, invoices, and forms directly to your document system with tenant-specific email addresses that automatically organize everything.',
+    image: screenshotContacts,
+    icon: function EmailIcon() {
       return (
         <>
-          <path
-            opacity=".5"
-            d="M8 17a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z"
-            fill="#fff"
-          />
           <path
             opacity=".3"
-            d="M8 24a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z"
+            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2Z"
+            fill="#fff"
+          />
+          <path d="M20 6 12 13 4 6h16Z" fill="#fff" />
+        </>
+      )
+    },
+  },
+  {
+    name: 'Document Capture via Photo',
+    summary:
+      'Turn smartphone photos into searchable digital documents instantly',
+    description:
+      'Digitize receipts, forms, and paper documents on-the-go with mobile capture and automatic text recognition.',
+    image: screenshotContacts,
+    icon: function CaptureIcon() {
+      return (
+        <>
+          <path
+            opacity=".3"
+            d="M9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9Z"
             fill="#fff"
           />
           <path
-            d="M8 10a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z"
+            d="M12 17c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5Zm0-8c1.65 0 3 1.35 3 3s-1.35 3-3 3-3-1.35-3-3 1.35-3 3-3Z"
             fill="#fff"
           />
         </>
@@ -74,22 +55,22 @@ const features = [
     },
   },
   {
-    name: 'Templates',
+    name: 'WYSIWYG Document Editor',
     summary:
-      'Organize all of your contacts, service providers, and invoices in one place.',
+      'Create professional documents directly in your browser with rich formatting',
     description:
-      'This also isn’t actually a feature, it’s just some friendly advice. We definitely recommend that you do this, you’ll feel really organized and professional.',
+      'Build contracts, proposals, and forms with an intuitive editor that requires no special software or training.',
     image: screenshotContacts,
-    icon: function ContactsIcon() {
+    icon: function EditorIcon() {
       return (
         <>
           <path
-            opacity=".5"
-            d="M25.778 25.778c.39.39 1.027.393 1.384-.028A11.952 11.952 0 0 0 30 18c0-6.627-5.373-12-12-12S6 11.373 6 18c0 2.954 1.067 5.659 2.838 7.75.357.421.993.419 1.384.028.39-.39.386-1.02.036-1.448A9.959 9.959 0 0 1 8 18c0-5.523 4.477-10 10-10s10 4.477 10 10a9.959 9.959 0 0 1-2.258 6.33c-.35.427-.354 1.058.036 1.448Z"
+            opacity=".3"
+            d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25Z"
             fill="#fff"
           />
           <path
-            d="M12 28.395V28a6 6 0 0 1 12 0v.395A11.945 11.945 0 0 1 18 30c-2.186 0-4.235-.584-6-1.605ZM21 16.5c0-1.933-.5-3.5-3-3.5s-3 1.567-3 3.5 1.343 3.5 3 3.5 3-1.567 3-3.5Z"
+            d="M20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83Z"
             fill="#fff"
           />
         </>
@@ -218,11 +199,10 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Simplify everyday business tasks.
+            Document management shouldn't be a chore.
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Because you’d probably be a little confused if we suggested you
-            complicate your everyday business tasks instead.
+            OyDocs provides tools and features to make it easy.
           </p>
         </div>
         <FeaturesMobile />

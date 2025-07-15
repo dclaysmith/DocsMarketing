@@ -37,6 +37,12 @@ const features = [
       'Secure storage of your customer contracts in a single place accessible when you need them.',
     image: screenshotReporting,
   },
+  {
+    title: 'Vendor Management',
+    description:
+      'Secure storage of your customer contracts in a single place accessible when you need them.',
+    image: screenshotReporting,
+  },
 ]
 
 export function PrimaryFeatures() {
